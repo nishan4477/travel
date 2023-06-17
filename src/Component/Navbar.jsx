@@ -6,33 +6,61 @@ import Home from '../Pages/Home'
 
 
 
+
+
 function Navbar() {
   return (
     <>
-    <nav  >
-        <div   className="tint  ">
-    <div  className="container py-3 " >
-     <header >
-    <div className="row " >
-                <div className="col-lg-4 ">
-                    <ul className='d-flex justify-content-start align-items-center gap-3 '>
-                        <li><Link to="mailto:nishansakha@gmail.com"><i class="fa-solid fa-envelope"></i> nishansakha@gmail.com </Link> </li>
-                        <li><Link to="tel:9843812806"><i class="fa-solid fa-phone"></i> Call Us  </Link></li>
-                        
-                    </ul>
-
-                </div>
-                <div className="col-lg-8">
-                    <ul className='d-flex justify-content-end align-items-center gap-3 '>
-                    <li><Link to=""><i class="fa-brands fa-square-facebook"></i> </Link></li>
-                    <li><Link to=""><i class="fa-brands fa-instagram"></i> </Link></li>
-                    <li><Link to=""><i class="fa-brands fa-square-pinterest"></i> </Link></li>
-                    <li><Link to="">Login </Link></li>
-                    <li><Link to="">Sign up </Link></li>
-                    </ul>
-                    </div>
+   
+    <nav className='position-fixed w-100 z-3' >
+    <header className='bg-light'>
+        <div className="container">
+          <div className="row my-0 py-3  ">
+            <div className="col-lg-4 ">
+              <ul className="d-flex justify-content-start align-items-center gap-3 ">
+                <li>
+                  <Link to="mailto:nishansakha@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> nishansakha@gmail.com{" "}
+                  </Link>{" "}
+                </li>
+                <li>
+                  <Link to="tel:9843812806">
+                    <i class="fa-solid fa-phone"></i> Call Us{" "}
+                  </Link>
+                </li>
+              </ul>
             </div>
-            </header>
+            <div className="col-lg-8">
+              <ul className="d-flex justify-content-end align-items-center gap-3 ">
+                <li>
+                  <Link to="">
+                    <i class="fa-brands fa-square-facebook"></i>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="">
+                    <i class="fa-brands fa-instagram"></i>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="">
+                    <i class="fa-brands fa-square-pinterest"></i>{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="">Login </Link>
+                </li>
+                <li>
+                  <Link to="">Sign up </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+   
+  
           <div className='navigator'>
             <div className="navbar navbar-expand-lg bg-body-tertiary ">
   <div className="container">
@@ -98,20 +126,11 @@ function Navbar() {
 </div>
          
       
-<div   className=' text-center text-light moto'>
-    <h1 >Let's make travel fun<br></br> and<br/> Create beautiful memories.</h1>
-    <p>We are the best travel company in the town who asure you the best travel experience in a very afordable price.</p>
-    <button className='btn btn-danger btn-sm '>Readmore</button>
-    
+
+
+
     
 
-
-</div>
-
-
-
-    </div>
-    </div>
     </nav>
     <Routes>
       <Route path="/" element={<Home/>}/>

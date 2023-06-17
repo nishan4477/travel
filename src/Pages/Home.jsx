@@ -1,11 +1,13 @@
 import React from "react";
 import Catdata from "../../datas/Catogoriesdata";
 import VectorSlider from "../Component/VectorSlider";
+import Hero from "../Component/Hero";
 
 
 function Home() {
   return (
     <>
+    <Hero/>
       <div className="container text-center " >
         <div  className="py-3" data-aos="fade-right">
           <h2 >About Us</h2>
@@ -17,13 +19,13 @@ function Home() {
           </p>
         </div>
        {/* tab paneel started */}
-<div className="container">
-  <div className="page-header">
-    <h1 data-aos="fade-right">Why Book On Travels<span className="pull-right label label-default"></span></h1>
+<div  data-aos="fade-right"  className="container">
+  <div className=" pan page-header">
+    <h1 >Why Book On Travels<span className="pull-right label label-default"></span></h1>
   </div>
   <div className="row">
     <div className="col-lg-12 ms-auto me-auto">
-      <div className="panel with-nav-tabs panel-default">
+      <div className=" pan panel with-nav-tabs panel-default">
         <div className="panel-heading">
           <ul className="nav nav-tabs">
             <li className="active"><a href="#tab1default" data-toggle="tab">THE COMPLETE EXPERIENCE</a></li>
@@ -58,8 +60,8 @@ function Home() {
        {/* tab paneel ended */}
 
         <div className="py-2">
-          <h2 >Best places to visit</h2>
-          <div className="row">
+          <h2  data-aos="fade-right">Best places to visit</h2>
+          <div  data-aos="fade-up" className="row">
             {Catdata.map((a) => (
               <div className="col-lg-4 card g-3  text-center px-3">
                <div className="imgbox"><img className="imgns w-100" src={a.image} /></div> 
