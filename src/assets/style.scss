@@ -66,9 +66,11 @@ header {
   background: rgba(0, 0, 0, 0.332);
 }
 
-// .navbar-expand-lg .navbar-collapse {
-//   padding-left: 200px;
-// }
+.navbar-expand-lg .navbar-collapse {
+  @media(min-width:992px){
+    padding-left: 200px;
+  }
+}
 .navbar-brand {
   padding: 0 0;
   .logo {

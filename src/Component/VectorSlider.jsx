@@ -13,7 +13,7 @@ function VectorSlider() {
    <>
    <OwlCarousel className='owl-theme' loop margin={5} nav items={`${itemContent}`}>
     {vector.map((b)=>(
-        <div class='item'>
+        <div className='item' key={b.id}>
        <img  className='w-100' height="200px"  src={b.image}/>
        
     </div>

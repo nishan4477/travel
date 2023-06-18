@@ -63,7 +63,7 @@ function Home() {
           <h2  data-aos="fade-right">Best places to visit</h2>
           <div  data-aos="fade-up" className="row">
             {Catdata.map((a) => (
-              <div className="col-lg-4 card g-3  text-center px-3">
+              <div className="col-lg-4 card g-3  text-center px-3" key={a.id}>
                <div className="imgbox"><img className="imgns w-100" src={a.image} /></div> 
                 <p>{a.desc}</p>
               </div>
