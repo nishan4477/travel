@@ -24,6 +24,12 @@ p{
 //     overflow: visible;
 // }
 
+.container{
+  &:before, &:after{
+    content: none;
+  }
+}
+
 .tint {
   &::before {
     content: "";
@@ -60,9 +66,9 @@ header {
   background: rgba(0, 0, 0, 0.332);
 }
 
-.navbar-expand-lg .navbar-collapse {
-  padding-left: 200px;
-}
+// .navbar-expand-lg .navbar-collapse {
+//   padding-left: 200px;
+// }
 .navbar-brand {
   padding: 0 0;
   .logo {
@@ -84,6 +90,7 @@ header {
 footer {
   position: relative;
   background-color: rgb(77, 73, 73);
+  overflow: hidden;
   a {
     color: white;
   }

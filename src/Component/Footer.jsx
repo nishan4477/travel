@@ -7,7 +7,7 @@ function Footer() {
     <footer>
         <div className="container p-2 text-light">
             <div className="row">
-                <div className="col-lg-4">
+                <div className="col-12 col-lg-4">
                    <div className="box"><h3>Contact Us</h3></div> <br/>
                    <ul>
                     <li><Link to="">Kathmandu, Nepal </Link></li>
@@ -18,7 +18,7 @@ function Footer() {
 
 
                 </div>
-                <div className="col-lg-4">
+                <div className="col-12 col-lg-4">
                 <div className="box"><h3>Popular Packages</h3></div> <br/>
                    <ul>
                     <li><Link to="">Nepal Honeymoon Tour</Link></li>
@@ -29,7 +29,7 @@ function Footer() {
 
 
                 </div>
-                <div className="col-lg-4">
+                <div className="col-12 col-lg-4">
                 <div className="box"><h3>NEWSLETTER</h3></div> <br/>
                  <p>Get Our Latest News And Special offers</p>
                  <input type='mail' placeholder='your email address'/><br/><br></br>
