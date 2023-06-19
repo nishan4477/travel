@@ -11,105 +11,83 @@ import Home from '../Pages/Home'
 function Navbar() {
   return (
     <>
-   <nav classname="position-fixed w-100 z-3">
-  <header classname="bg-light">
-    <div classname="container">
-      <div classname="row my-0 py-3  ">
-        <div classname="col-lg-4 ">
-          <ul classname="d-flex justify-content-start align-items-center gap-3 ">
+   <nav className="position-fixed w-100 z-3">
+  <header className="bg-light">
+    <div className="container">
+      <div className="row my-0 py-3  ">
+        <div className="col-lg-5 ">
+          <ul className="d-flex justify-content-start align-items-center gap-3 ">
             <li>
-              <link to="mailto:nishansakha@gmail.com" />
-              <i className="fa-solid fa-envelope" /> nishansakha@gmail.com{'{'}" "{'}'}
-              {'{'}" "{'}'}
+              <Link to="mailto:nishansakha@gmail.com" />
+              <i className="fa-solid fa-envelope" /> nishansakha@gmail.com
+             
             </li>
-            <li>
-              <link to="tel:9843812806" />
-              <i className="fa-solid fa-phone" /> Call Us{'{'}" "{'}'}
-            </li>
+                <li>
+                  <Link to="tel:9843812806" />
+                  <i className="fa-solid fa-phone" /> Call Us
+                </li>
           </ul>
         </div>
-        <div classname="col-lg-8">
-          <ul classname="d-flex justify-content-end align-items-center gap-3 ">
+        <div className="col-lg-7">
+          <ul className="d-flex justify-content-end align-items-center gap-3 ">
             <li>
-              <link to />
-              <i className="fa-brands fa-square-facebook" />{'{'}" "{'}'}
+              <Link to />
+              <i className="fa-brands fa-square-facebook" />
             </li>
             <li>
-              <link to />
-              <i className="fa-brands fa-instagram" />{'{'}" "{'}'}
+              <Link to />
+              <i className="fa-brands fa-instagram" />
             </li>
             <li>
-              <link to />
-              <i className="fa-brands fa-square-pinterest" />{'{'}" "{'}'}
+              <Link to />
+              <i className="fa-brands fa-square-pinterest" />
             </li>
             <li>
-              <link to />Login 
+              <Link to />Login 
             </li>
             <li>
-              <link to />Sign up 
+              <Link to />Sign up 
             </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <div classname="navigator">
-    <div classname="navbar navbar-expand-lg bg-body-tertiary ">
-      <div classname="container">
-        <link classname="navbar-brand " to="#" /><img classname=" logo" src="{logo}" />
-        <button classname="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span classname="navbar-toggler-icon">
-          </span></button>
-        <div classname="collapse navbar-collapse ms-5 " id="navbarNavDropdown">
-          <ul classname="navbar-nav">
-            <li classname="nav-item  ">
-              <link classname="nav-link active " aria-current="page" to="#" />Home
-            </li>
-            <li classname="nav-item dropdown ">
-              <link classname="nav-link dropdown-toggle " to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" />
-              LISTING
-              <ul classname="dropdown-menu">
-                <li><link classname="dropdown-item" to="#" />Action</li>
-                <li><link classname="dropdown-item" to="#" />Another action</li>
-                <li><link classname="dropdown-item" to="#" />Something else here</li>
-              </ul>
-            </li>
-            <li classname="nav-item dropdown ">
-              <link classname="nav-link dropdown-toggle " to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" />
-              TOURS
-              <ul classname="dropdown-menu">
-                <li><link classname="dropdown-item" to="#" />NATIONAL</li>
-                <li><link classname="dropdown-item" to="#" />INTERNATIONAL</li>
-                <li><link classname="dropdown-item" to="#" />OTHERS</li>
-              </ul>
-            </li>
-            <li classname="nav-item dropdown ">
-              <link classname="nav-link dropdown-toggle " to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" />
-              DESTINATIONS
-              <ul classname="dropdown-menu">
-                <li><link classname="dropdown-item" to="#" />POKHARA
-                </li>
-                <li><link classname="dropdown-item" to="#" />KATHMANDU</li>
-                <li><link classname="dropdown-item" to="#" />MUSTANG</li>
-              </ul>
-            </li>
-            <li classname="nav-item dropdown ">
-              <link classname="nav-link dropdown-toggle " to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" />
-              PAGES
-              <ul classname="dropdown-menu">
-                <li><link classname="dropdown-item" to="#" />Action</li>
-                <li><link classname="dropdown-item" to="#" />Another action</li>
-                <li><link classname="dropdown-item" to="#" />Something else here</li>
-              </ul>
-            </li>
-            <li classname="nav-item  ">
-              <link classname="nav-link active " aria-current="page" href="#" />CONTACT
-            </li>
-          </ul>
-        </div>
-      </div>
+  
+<div className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="#"><img className='w-100 logo'  height='100px' src={logo}/></Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="#">Features</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="#">Pricing</Link>
+        </li>
+      <li className="nav-item dropdown">
+  <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Tours
+  </Link>
+  <ul className="dropdown-menu">
+    <li><Link className="dropdown-item" to="#">Pokhara</Link></li>
+    <li><Link className="dropdown-item" to="#">Mustang</Link></li>
+    <li><Link className="dropdown-item" to="#">Manang</Link></li>
+  </ul>
+</li>
+
+       
+      </ul>
     </div>
   </div>
+</div>
+
 </nav>
 
       
