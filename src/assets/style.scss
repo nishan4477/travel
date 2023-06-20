@@ -20,6 +20,20 @@ p{
     font-size: clamp(12px, 1.5vw, 16px);
 }
 
+.line{
+  position: relative;
+  display: inline-block;
+  h2::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    top: 90%;
+    
+
+  }
+}
 // body{
 //     overflow: visible;
 // }
@@ -169,3 +183,29 @@ footer {
 
 // }
 
+.membox{
+ 
+  border: 1px solid back;
+ max-width: 250px;
+  
+height: 250px;
+
+.imgcir{
+  position: relative;
+  margin: 10px auto;
+border-radius: 50%;
+
+max-width: 90px;
+height: 120px;
+overflow: hidden;
+
+img{
+ position: absolute;
+ top: 0%;
+ left: 0;
+ display: block;
+}
+
+}
+
+}

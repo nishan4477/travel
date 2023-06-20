@@ -2,6 +2,8 @@ import React from "react";
 import Catdata from "../../datas/Catogoriesdata";
 import VectorSlider from "../Component/VectorSlider";
 import Hero from "../Component/Hero";
+import TravelNews from "../Component/TravelNews";
+import Members from "../Component/Members";
 
 
 function Home() {
@@ -9,8 +11,8 @@ function Home() {
     <>
     <Hero/>
       <div className="container text-center " >
-        <div  className="py-3" data-aos="fade-right">
-          <h2 >About Us</h2>
+        <div  className="py-2" data-aos="fade-right">
+         <div className="line"><h2 >About Us</h2></div> 
           <p>
             We manage and you travel easy – that’s the motto of our company.
             Connect with us and we will do the rest. The responsibility is huge
@@ -21,7 +23,7 @@ function Home() {
        {/* tab paneel started */}
 <div  data-aos="fade-right"  className="container">
   <div className=" pan page-header">
-    <h1 >Why Book On Travels<span className="pull-right label label-default"></span></h1>
+   <div className="line"><h2 >Why Book On Travels<span className="pull-right label label-default"></span></h2></div> 
   </div>
   <div className="row">
     <div className="col-lg-12 ms-auto me-auto">
@@ -60,21 +62,28 @@ function Home() {
        {/* tab paneel ended */}
 
         <div className="py-2">
-          <h2  data-aos="fade-right">Best places to visit</h2>
+          <div className="line"><h2  data-aos="fade-right">Best places to visit</h2></div>
           <div  data-aos="fade-up" className="row">
             {Catdata.map((a) => (
-              <div className="col-lg-4 card g-3  text-center px-3" key={a.id}>
+              <div className="col-lg-4  card larger shadow g-3  text-center px-3" key={a.id}>
                <div className="imgbox"><img className="imgns w-100" src={a.image} /></div> 
                 <p>{a.desc}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="py-4">
-          <VectorSlider/>
 
-
+        <div data-aos="fade-right" className="py-2">
+         <div className="line"> <h2>Our Blog</h2></div>
+         <TravelNews/>
         </div>
+        <div className="py-3">
+          <Members/>
+        </div>
+
+        {/* <div className="py-3">
+          <VectorSlider />
+         </div> */}
       </div>
     </>
   )

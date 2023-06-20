@@ -55,8 +55,8 @@ function Navbar() {
   </header>
   
 <div className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <Link className="navbar-brand" to="#"><img className='w-100 logo'  height='100px' src={logo}/></Link>
+  <div className="container">
+    <Link className="navbar-brand" to="#"><img className='w-100 logo'  height='150px' src={logo}/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -72,13 +72,16 @@ function Navbar() {
           <Link className="nav-link" to="#">Pricing</Link>
         </li>
       <li className="nav-item dropdown">
-  <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Tours
   </Link>
   <ul className="dropdown-menu">
-    <li><Link className="dropdown-item" to="#">Pokhara</Link></li>
-    <li><Link className="dropdown-item" to="#">Mustang</Link></li>
-    <li><Link className="dropdown-item" to="#">Manang</Link></li>
+    <li><Link className="dropdown-item" to="#">Nepal</Link></li>
+    <li><Link className="dropdown-item" to="#">India</Link></li>
+    <li><Link className="dropdown-item" to="#">Thailand</Link></li>
+    <li><Link className="dropdown-item" to="#">Philipines</Link></li>
+    <li><Link className="dropdown-item" to="#">Maldives</Link></li>
+    <li><Link className="dropdown-item" to="#">Singapore</Link></li>
   </ul>
 </li>
 
