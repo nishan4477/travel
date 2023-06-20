@@ -30,7 +30,7 @@ const TravelNews = ( ) => {
     <Carousel responsive={responsive}>
         {BlogData.map((d)=>(
 
-<div className="card mx-1 g-3 shadow " style={{width: ''}}>
+<div className="card m-3 g-3 shadow " style={{width: ''}}>
 <img height="200px"  src={d.image} className="card-img-top " alt="..." />
 <div className="card-body">
   <h3 className="card-title text-danger py-1 ">{d.title}</h3>

@@ -14,7 +14,8 @@ function Navbar() {
       console.log("asd");
       if ($(this).scrollTop() > 150) {
         $("header").css({ display: "none" });
-      } else {
+      }
+       else {
         $("header").css({ display: "block" });
       }
     });

@@ -136,9 +136,9 @@ function Home() {
 
         <div className="py-2">
           <div className="line py-2">
-            <h2 data-aos="fade-right">Best places to visit</h2>
+            <h2 >Best places to visit</h2>
           </div>
-          <div data-aos="fade-up" className="row g-4">
+          <div className="row g-4">
             {Catdata.map((a) => (
               <div className="col-lg-4" key={a.id}>
                 <div className=" card cardh larger shadow   text-center ">
@@ -152,16 +152,16 @@ function Home() {
           </div>
         </div>
 
-        <div data-aos="fade-right" className="py-2">
+        <div  className="py-2">
           <div className="line py-2">
-            {" "}
+          
             <h2>Our Blog</h2>
           </div>
           <TravelNews />
         </div>
         <div className="py-3">
           <div className="line py-2">
-            {" "}
+          
             <h2>Our Teams</h2>
           </div>
           <Members />
