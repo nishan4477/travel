@@ -9,6 +9,16 @@ import Home from '../Pages/Home'
 
 
 function Navbar() {
+  if ($(window).width() >= 480) {
+    $(window).scroll(function () {
+      console.log("asd");
+      if ($(this).scrollTop() > 150) {
+        $("header").css({ display: "none" });
+      } else {
+        $("header").css({ display: "block" });
+      }
+    });
+  }
   return (
     <>
    <nav className="position-fixed w-100 z-3">
@@ -76,17 +86,23 @@ function Navbar() {
     Tours
   </Link>
   <ul className="dropdown-menu">
-    <li><Link className="dropdown-item" to="#">Nepal</Link></li>
-    <li><Link className="dropdown-item" to="#">India</Link></li>
-    <li><Link className="dropdown-item" to="#">Thailand</Link></li>
-    <li><Link className="dropdown-item" to="#">Philipines</Link></li>
-    <li><Link className="dropdown-item" to="#">Maldives</Link></li>
-    <li><Link className="dropdown-item" to="#">Singapore</Link></li>
+    <li><Link className="dropdown-item" to="#">Pokhara</Link></li>
+    <li><Link className="dropdown-item" to="#">Mustang</Link></li>
+    <li><Link className="dropdown-item" to="#">Manag</Link></li>
+    <li><Link className="dropdown-item" to="#">Kalinchiowk</Link></li>
+    <li><Link className="dropdown-item" to="#">ABC circuit</Link></li>
+    <li><Link className="dropdown-item" to="#">Bandipur</Link></li>
   </ul>
 </li>
 
        
       </ul>
+      <div className='d-flex justify-content-end align-items-center  mt-2' >
+     <form className="d-flex gap-2  justify-content-end align-items-center" role="search">
+  <input className="form-control me" type="search" placeholder="Enter Your Destination" aria-label="Search" />
+  <button className="btn btn-danger btn-outline-dark" type="submit">Search</button>
+</form>
+</div>
     </div>
   </div>
 </div>

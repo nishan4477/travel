@@ -11,7 +11,7 @@ function Home() {
     <>
     <Hero/>
       <div className="container text-center " >
-        <div  className="py-2" data-aos="fade-right">
+        <div  className="py-3" data-aos="fade-right">
          <div className="line"><h2 >About Us</h2></div> 
           <p>
             We manage and you travel easy – that’s the motto of our company.
@@ -27,7 +27,7 @@ function Home() {
   </div>
   <div className="row">
     <div className="col-lg-12 ms-auto me-auto">
-      <div className=" pan panel with-nav-tabs panel-default">
+      <div className=" pan  border-danger rounded  panel with-nav-tabs panel-default">
         <div className="panel-heading">
           <ul className="nav nav-tabs">
             <li className="active"><a href="#tab1default" data-toggle="tab">THE COMPLETE EXPERIENCE</a></li>
@@ -62,7 +62,7 @@ function Home() {
        {/* tab paneel ended */}
 
         <div className="py-2">
-          <div className="line"><h2  data-aos="fade-right">Best places to visit</h2></div>
+          <div className="line py-2"><h2  data-aos="fade-right">Best places to visit</h2></div>
           <div  data-aos="fade-up" className="row">
             {Catdata.map((a) => (
               <div className="col-lg-4  card larger shadow g-3  text-center px-3" key={a.id}>
@@ -74,7 +74,7 @@ function Home() {
         </div>
 
         <div data-aos="fade-right" className="py-2">
-         <div className="line"> <h2>Our Blog</h2></div>
+         <div className="line py-2"> <h2>Our Blog</h2></div>
          <TravelNews/>
         </div>
         <div className="py-3">
