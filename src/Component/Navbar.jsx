@@ -28,35 +28,35 @@ function Navbar() {
         <div className="col-lg-5 ">
           <ul className="d-flex justify-content-start align-items-center gap-3 ">
             <li>
-              <Link to="mailto:nishansakha@gmail.com" />
-              <i className="fa-solid fa-envelope" /> nishansakha@gmail.com
+              <Link to="mailto:nishansakha@gmail.com" >
+              <i className="fa-solid fa-envelope" /> nishansakha@gmail.com</Link>
              
             </li>
                 <li>
-                  <Link to="tel:9843812806" />
-                  <i className="fa-solid fa-phone" /> Call Us
+                  <Link to="tel:9843812806" >
+                  <i className="fa-solid fa-phone" /> Call Us</Link>
                 </li>
           </ul>
         </div>
         <div className="col-lg-7">
           <ul className="d-flex justify-content-end align-items-center gap-3 ">
             <li>
-              <Link to />
-              <i className="fa-brands fa-square-facebook" />
+              <Link to="" >
+              <i className="fa-brands fa-square-facebook" /></Link>
             </li>
             <li>
-              <Link to />
-              <i className="fa-brands fa-instagram" />
+              <Link to ="">
+              <i className="fa-brands fa-instagram" /></Link>
             </li>
             <li>
-              <Link to />
-              <i className="fa-brands fa-square-pinterest" />
+              <Link to ="">
+              <i className="fa-brands fa-square-pinterest" /></Link>
             </li>
             <li>
-              <Link to />Login 
+              <Link to ="">Login </Link>
             </li>
             <li>
-              <Link to />Sign up 
+              <Link to="" >Sign up </Link>
             </li>
           </ul>
         </div>
