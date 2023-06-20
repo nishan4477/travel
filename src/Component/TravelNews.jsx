@@ -34,7 +34,7 @@ const TravelNews = ( ) => {
 <div className="card-body">
   <h3 className="card-title text-danger ">{d.title}</h3>
   <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quos laboriosam ex ea obcaecati.</p>
-  <a href="#" className="btn btn-primary">ReadMore</a>
+  <a href="#" className="btn btn-danger">ReadMore</a>
 </div>
 </div>
 
