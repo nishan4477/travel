@@ -26,10 +26,12 @@ p{
   h2::before{
     content: "";
     position:absolute;
-    width: 100%;
+    width: 75px;
     height: 2px;
     background-color: red;
-    top: 80%;
+    bottom:7px;
+    left: 50%;
+    transform: translateX(-50%);
     
 
   }
@@ -49,7 +51,7 @@ p{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.216);
+    background-color: rgba(0, 0, 0, 0.596);
   }
   width: 100%;
   height: 100vh;
@@ -94,7 +96,7 @@ header {
 .tinted {
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.332);
+  background: rgba(0, 0, 0, 0.615);
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -142,18 +144,21 @@ footer {
     }
   }
 }
+.cardh{
+  height: 250px;
 
+}
 .imgbox {
 //   width: 350px;
-  height: 300px;
+  // height: 300px;
 
   position: relative;
   overflow: hidden;
   .imgns {
     display: block;
-    position: absolute;
-    width: 350px;
-    height: 300px;
+   
+   
+    
     transition: 0.9s;
     &:hover {
       scale: 1.2;
@@ -186,7 +191,7 @@ footer {
 .membox{
  
   border: 1px solid back;
- max-width: 250px;
+//  max-width: 250px;
   
 height: 250px;
 
@@ -195,8 +200,8 @@ height: 250px;
   margin: 10px auto;
 border-radius: 50%;
 
-max-width: 90px;
-height: 120px;
+max-width: 120px;
+aspect-ratio: 1;
 overflow: hidden;
 
 img{
@@ -208,4 +213,13 @@ img{
 
 }
 
+}
+
+.card-title {
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
 }

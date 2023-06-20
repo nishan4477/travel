@@ -32,14 +32,14 @@ function Footer() {
                 <div className="col-12 col-lg-4">
                 <div className="box"><h3>NEWSLETTER</h3></div> <br/>
                  <p>Get Our Latest News And Special offers</p>
-                 <input type='mail' placeholder='your email address'/><br/><br></br>
-                 <button className='btn btn-sm btn-danger'>Suscribe</button>
+                 <input type='mail' placeholder=' your email address'/><br/><br></br>
+                 <button className='btn btn-sm mb-5 btn-danger'>Suscribe</button>
 
                 </div>
             </div>
-            <div className="row py-5 text-center">
+            <div className="row mb-2  text-center">
                 <hr/>
-                <p>Powered By Nishan Sakha © 2023</p>
+                <small>Powered By Nishan Sakha © 2023</small>
                 
 
             </div>
