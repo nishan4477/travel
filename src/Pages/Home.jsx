@@ -134,7 +134,7 @@ function Home() {
 
         {/* tab paneel ended */}
 
-        <div className="py-2">
+        <div className="py-2 pb-4 px-2 bg">
           <div className="line py-2">
             <h2 >Best places to visit</h2>
           </div>
@@ -152,7 +152,12 @@ function Home() {
           </div>
         </div>
 
-        <div  className="py-2">
+        <div className=" py-2">
+          <VectorSlider/>
+
+        </div>
+
+        <div  className="py-4 bg">
           <div className="line py-2">
           
             <h2>Our Blog</h2>
