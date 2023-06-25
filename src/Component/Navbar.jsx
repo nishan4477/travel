@@ -3,6 +3,8 @@ import { Link, Route, Routes } from 'react-router-dom'
 import logo from "../assets/Images/logo.png"
 
 import Home from '../Pages/Home'
+import { About } from '../Pages/About';
+import ContactUs from '../Pages/ContactUs';
 
 
 
@@ -42,23 +44,21 @@ function Navbar() {
         <div className="col-lg-7">
           <ul className="d-flex justify-content-end align-items-center gap-3 ">
             <li>
-              <Link to="" >
+              <Link to="https://www.facebook.com/nishan.sakha/?paipv=0&eav=Afa3Kv8A8CK5S1Xks1IlAJZCWj2lNlSG0NvPUA4nqe4vtWeahBhILSaBdZa2uY4YHeg&_rdr" >
               <i className="fa-brands fa-square-facebook" /></Link>
             </li>
             <li>
-              <Link to ="">
+              <Link to ="https://www.instagram.com/nishanee77/?hl=en">
               <i className="fa-brands fa-instagram" /></Link>
             </li>
             <li>
-              <Link to ="">
+              <Link to ="https://www.pinterest.com/">
               <i className="fa-brands fa-square-pinterest" /></Link>
             </li>
             <li>
               <Link to ="">Login </Link>
             </li>
-            <li>
-              <Link to="" >Sign up </Link>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -67,20 +67,20 @@ function Navbar() {
   
 <div className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container">
-    <Link className="navbar-brand" to="#"><img className='w-100 logo'  height='150px' src={logo}/></Link>
+    <Link className="navbar-brand" to="/"><img className='w-100 logo'  height='150px' src={logo}/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav gap-2">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#">Features</Link>
+          <Link className="nav-link" to="/about"><i className="fa-solid fa-circle-info"></i> About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#">Pricing</Link>
+          <Link className="nav-link" to="/contact"><i class="fa-solid fa-address-book"></i> Contact Us</Link>
         </li>
       <li className="nav-item dropdown">
   <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -108,18 +108,14 @@ function Navbar() {
   </div>
 </div>
 
+
 </nav>
-
-      
-
-
-
-    
-
-    
-    <Routes>
+<Routes>
       <Route path="/" element={<Home/>}/>
-    </Routes>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<ContactUs/>}/>
+      </Routes>
+
 
     </>
   )

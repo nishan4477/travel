@@ -172,12 +172,10 @@ function Home() {
           <Members />
         </div>
 
-        {/* <div className="py-3">
-          <VectorSlider />
-         </div> */}
+       
       </div>
     </>
-  );
+  )
 }
 
 export default Home;

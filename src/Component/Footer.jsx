@@ -8,7 +8,7 @@ function Footer() {
         <div className="container p-2 text-light">
             <div className="row">
                 <div className="col-12 col-lg-4">
-                   <div className="box"><h3>Contact Us</h3></div> <br/>
+                  <h3>Contact Us</h3> <br/>
                    <ul>
                     <li><Link to="">Kathmandu, Nepal </Link></li>
                     <li><Link to="">Contact Us: 9843812806</Link></li>
@@ -19,7 +19,7 @@ function Footer() {
 
                 </div>
                 <div className="col-12 col-lg-4">
-                <div className="box"><h3>Popular Packages</h3></div> <br/>
+              <h3>Popular Packages</h3> <br/>
                    <ul>
                     <li><Link to="">Nepal Honeymoon Tour</Link></li>
                     <li><Link to="">Everest Base Camp Trek</Link></li>
@@ -30,7 +30,7 @@ function Footer() {
 
                 </div>
                 <div className="col-12 col-lg-4">
-                <div className="box"><h3>NEWSLETTER</h3></div> <br/>
+                <h3>NEWSLETTER</h3> <br/>
                  <p>Get Our Latest News And Special offers</p>
                  <input type='mail' placeholder=' your email address'/><br/><br></br>
                  <button className='btn btn-sm mb-5 btn-danger'>Suscribe</button>
